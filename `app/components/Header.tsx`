@@ -1,0 +1,40 @@
+import Image from "next/image"
+
+export default function Header() {
+  return (
+    <header className="bg-gradient-to-b from-white to-[#F0F8FF] border-b">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex justify-between items-center mb-8">
+          <div className="flex items-center">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9187.JPG-fMQnCsWNC2oFn9cOqp33MQbNiqscup.jpeg"
+              alt="شعار الشركة"
+              width={80}
+              height={80}
+              priority
+              className="ml-4"
+            />
+            <div>
+              <h1 className="text-2xl font-bold text-[#67C8F3]">مختبرات ثقة الطبية</h1>
+              <p className="text-lg text-gray-600">Trust Med Labs</p>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/966112305040?text=مرحبا،%20أرغب%20في%20حجز%20موعد%20للفحص"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#7DBB4F] hover:bg-[#6ca743] text-white px-6 py-2 rounded-full transition-colors"
+          >
+            احجز موعدك الآن
+          </a>
+        </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#67C8F3] mb-3">
+            فحص شامل للأمراض الجنسية بنتائج دقيقة وسريعة
+          </h2>
+          <p className="text-gray-600 text-base md:text-lg mb-6">مع ضمان كامل لخصوصيتك وسرية معلوماتك</p>
+        </div>
+      </div>
+    </header>
+  )
+}
